@@ -1,0 +1,15 @@
+.section-project_label {
+    display: flex;
+    list-style: none;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+        
+    & li {
+        display: inline-block;
+        padding: 0 1rem;
+        margin-right: 1rem;
+        background-color: rgba($color-tertiary-dark, .5);
+        color: $color-white;
+        border-radius: 2px;
+    }
+}
