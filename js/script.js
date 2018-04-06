@@ -1,6 +1,6 @@
 $(document).ready(function() {
    $(window).scroll(function() {
-       if($(this).scrollTop() > 2500) {
+       if($(this).scrollTop() > 2200) {
            $(".composition__photo--p1").css("top", "-20px").css("opacity", "1");
            $(".composition__photo--p2").css("right", "20px").css("opacity", "1");
            $(".composition__photo--p3").css("top", "100px").css("opacity", "1");
@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-       if($(this).scrollTop() > 2800) {
+       if($(this).scrollTop() > 2500) {
            $(".composition__photo--p4").css("top", "-20px").css("opacity", "1");
            $(".composition__photo--p5").css("right", "20px").css("opacity", "1");
            $(".composition__photo--p6").css("top", "100px").css("opacity", "1");

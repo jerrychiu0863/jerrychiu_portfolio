@@ -288,7 +288,14 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 52rem;
+  /*&:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }*/ }
   .card__side {
     border-radius: 3px;
     font-size: 2rem;
@@ -299,22 +306,25 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    /*&--back {
+            background-color: blue;
+            transform: rotateY(180deg);
+            
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            
+             &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+            
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+        }*/ }
     .card__side--front {
       background-color: #fff; }
-    .card__side--back {
-      background-color: blue;
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -1007,6 +1017,8 @@ body {
     letter-spacing: 1px;
     text-align: justify;
     text-justify: inter-word; }
+  .section-about .skill__list {
+    padding-left: 2.5rem; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }

@@ -21,7 +21,7 @@
             background-color: $color-white;
         }
         
-        &--back {
+        /*&--back {
             background-color: blue;
             transform: rotateY(180deg);
             
@@ -36,16 +36,16 @@
             &-3 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
             }
-        }
+        }*/
     }
         
-    &:hover &__side--front {
+    /*&:hover &__side--front {
         transform: rotateY(-180deg);
     }
     
     &:hover &__side--back {
         transform: rotateY(0);
-    }
+    }*/
     
     
     // Front side styling

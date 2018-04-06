@@ -9,6 +9,10 @@
         text-justify: inter-word;
     }
     
+    & .skill__list {
+        padding-left: 2.5rem;
+    }
+    
     @include respond(tab-port) {
         padding: 20rem 0;
     }
