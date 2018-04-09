@@ -892,6 +892,19 @@ body {
         width: 100%;
         
         
+    }*/
+  /*&__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+    
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
     }*/ }
   .navigation__checkbox {
     display: none; }
@@ -993,14 +1006,6 @@ body {
     top: -1rem; }
   .navigation__button:hover .navigation__icon::after {
     top: 1rem; }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon {
-    background-color: transparent; }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-    top: 0;
-    transform: rotate(135deg); }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-    top: 0;
-    transform: rotate(-135deg); }
 
 .bk-show {
   transform: scale(80); }
