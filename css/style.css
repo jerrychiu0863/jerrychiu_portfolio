@@ -610,6 +610,9 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.form__group p {
+  padding: 0 1rem 1rem 0; }
+
 .section-project_label {
   display: flex;
   list-style: none;
@@ -782,7 +785,7 @@ body {
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: inline-block; }
     @media only screen and (max-width: 56.25em) {
       .footer__navigation {
@@ -805,6 +808,9 @@ body {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
+  .footer__copyright {
+    letter-spacing: 5px;
+    text-transform: uppercase; }
 
 .row {
   max-width: 114rem;
