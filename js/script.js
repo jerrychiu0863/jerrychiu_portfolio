@@ -16,6 +16,14 @@ $(window).scroll(function() {
        } 
 });
 
+$(window).scroll(function() {
+       if($(this).scrollTop() > 3000) {
+           $(".composition__photo--p7").css("top", "-20px").css("opacity", "1");
+           $(".composition__photo--p8").css("right", "20px").css("opacity", "1");
+           $(".composition__photo--p9").css("top", "100px").css("opacity", "1");
+       } 
+});
+
 //////////////
 //NAVIGATION
 $('#navi-toggle').click(function() {
