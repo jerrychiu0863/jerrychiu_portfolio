@@ -35,3 +35,6 @@ $('.navigation__item').click(function() {
     $('.navigation__background').removeClass('bk-show');
     $('.navigation__nav').removeClass('nav-show');
 });
+
+
+/////Responsive

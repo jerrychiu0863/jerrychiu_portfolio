@@ -53,7 +53,7 @@
             transition-delay: .3s;
             
              @include respond(tab-port) {
-                top: 1rem;
+                top: .5rem;
                 left: 0;
                 transform: scale(1.1);
             }
