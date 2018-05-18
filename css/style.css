@@ -91,10 +91,14 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 2rem;
+    letter-spacing: 1.5rem;
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out; }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
@@ -105,6 +109,14 @@ body {
     font-weight: 700;
     letter-spacing: 1rem;
     animation: moveInRight 1.5s ease-in-out; }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--sub {
+        letter-spacing: 1rem;
+        display: inline-block; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem;
+        display: inline-block; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
@@ -913,11 +925,15 @@ body {
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
+    width: 70%;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media only screen and (max-width: 75em) {
+      .header__text-box {
+        width: 70%; } }
 
 .navigation {
   /*&__checkbox:checked ~ &__background {
@@ -1102,17 +1118,32 @@ body {
   background: #f7f7f7;
   padding: 25rem 0 25rem 0;
   margin-top: -20vh; }
+  @media only screen and (max-width: 75em) {
+    .section-project {
+      margin-top: -10vh;
+      margin-bottom: -15rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-project {
-      padding: 20rem 0; } }
+      padding: 20rem 0;
+      margin-bottom: -20rem; } }
   .section-project-1 {
     background: #f7f7f7;
     padding: 20rem 0 25rem 0;
     margin-top: -20vh; }
+    @media only screen and (max-width: 75em) {
+      .section-project-1 {
+        margin-top: -10rem;
+        margin-bottom: -15rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .section-project-1 {
+        margin-bottom: -20rem; } }
   .section-project-2 {
     background: #f7f7f7;
     padding: 20rem 0 25rem 0;
     margin-top: -20vh; }
+    @media only screen and (max-width: 75em) {
+      .section-project-2 {
+        margin-top: -10rem; } }
 
 .section-stories {
   padding: 15rem 0;
