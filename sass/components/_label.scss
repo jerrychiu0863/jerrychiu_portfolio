@@ -1,5 +1,6 @@
 .section-project_label {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin-top: -2rem;
     margin-bottom: 1.5rem;
@@ -8,6 +9,7 @@
         display: inline-block;
         padding: 0 1rem;
         margin-right: 1rem;
+        margin-bottom: .5rem;
         background-color: rgba($color-tertiary-dark, .8);
         color: $color-white;
         border-radius: 2px;
