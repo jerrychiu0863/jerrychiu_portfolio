@@ -3,10 +3,22 @@
     padding: 15rem 0 25rem 0;
     margin-top: -20vh;
     
+    & .aboutme {
+        opacity: 0;
+        transform: scale(.9);
+        transition: all linear .3s;
+    }
+    
     & p {
         letter-spacing: 1px;
         text-align: justify;
         text-justify: inter-word;
+    }
+    
+    & .aboutskill {
+        opacity: 0;
+        transform: scale(.9);
+        transition: all linear .3s;
     }
     
     & .skill__list {

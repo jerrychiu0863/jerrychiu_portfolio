@@ -3,6 +3,8 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    opacity: 0;
+    transition: all linear .8s;
     
     &__side {
         border-radius: 3px;
