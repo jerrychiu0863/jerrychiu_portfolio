@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 
 ////////Artist's Web Animation
-var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9;
+var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9, $p10, $p11, $p12;
 $p1 = $(".composition__photo--p1");
 $p2 = $(".composition__photo--p2");
 $p3 = $(".composition__photo--p3");
@@ -50,6 +50,9 @@ $p6 = $(".composition__photo--p6");
 $p7 = $(".composition__photo--p7");
 $p8 = $(".composition__photo--p8");
 $p9 = $(".composition__photo--p9");
+$p10 = $(".composition__photo--p10");
+$p11 = $(".composition__photo--p11");
+$p12 = $(".composition__photo--p12");
 
 
 $(document).ready(function() {
@@ -58,7 +61,7 @@ $(document).ready(function() {
            $p1.css({"top": "-20px","opacity": "1"});
            $p2.css({"right": "20px", "opacity": "1"});
            $p3.css({"top": "100px", "opacity": "1"});
-       }else if($(this).scrollTop() > 2000 && $(window).width() >= 900 && $(window).width() <= 1200) {
+       }else if($(this).scrollTop() > 1900 && $(window).width() >= 900 && $(window).width() <= 1200) {
            $p1.css({"top": "-20px","opacity": "1"});
            $p2.css({"right": "20px", "opacity": "1"});
            $p3.css({"top": "80px", "opacity": "1"});
@@ -77,11 +80,11 @@ $(window).scroll(function() {
            $p4.css({"top": "-20px","opacity": "1"});
            $p5.css({"right": "20px", "opacity": "1"});
            $p6.css({"top": "100px", "opacity": "1"});
-       }else if($(this).scrollTop() > 2500 && $(window).width() >= 900 && $(window).width() <= 1200) {
+       }else if($(this).scrollTop() > 2200 && $(window).width() >= 900 && $(window).width() <= 1200) {
            $p4.css({"top": "-20px","opacity": "1"});
            $p5.css({"right": "20px", "opacity": "1"});
            $p6.css({"top": "80px", "opacity": "1"});
-       } else if($(this).scrollTop() > 3300 && $(window).width() <= 900) {
+       } else if($(this).scrollTop() > 3100 && $(window).width() <= 900) {
            $p4.css({"top": "-20px","opacity": "1"});
            $p5.css({"right": "0px", "opacity": "1"});
            $p6.css({"top": "-25px", "opacity": "1"});
@@ -95,14 +98,32 @@ $(window).scroll(function() {
            $p7.css({"top": "-20px","opacity": "1"});
            $p8.css({"right": "20px", "opacity": "1"});
            $p9.css({"top": "100px", "opacity": "1"});
-       }else if($(this).scrollTop() > 2900 && $(window).width() >= 900 && $(window).width() <= 1200) {
+       }else if($(this).scrollTop() > 2700 && $(window).width() >= 900 && $(window).width() <= 1200) {
            $p7.css({"top": "-20px","opacity": "1"});
            $p8.css({"right": "20px", "opacity": "1"});
            $p9.css({"top": "80px", "opacity": "1"});
-       } else if($(this).scrollTop() > 3700 && $(window).width() <= 900) {
+       } else if($(this).scrollTop() > 3500 && $(window).width() <= 900) {
            $p7.css({"top": "-20px","opacity": "1"});
            $p8.css({"right": "0px", "opacity": "1"});
            $p9.css({"top": "-25px", "opacity": "1"});
+           
+       } 
+});
+
+////Estate's animation
+$(window).scroll(function() {
+       if($(this).scrollTop() > 3600 && $(window).width() >= 1200){
+           $p10.css({"top": "-20px","opacity": "1"});
+           $p11.css({"right": "20px", "opacity": "1"});
+           $p12.css({"top": "100px", "opacity": "1"});
+       }else if($(this).scrollTop() > 3100 && $(window).width() >= 900 && $(window).width() <= 1200) {
+           $p10.css({"top": "-20px","opacity": "1"});
+           $p11.css({"right": "20px", "opacity": "1"});
+           $p12.css({"top": "80px", "opacity": "1"});
+       } else if($(this).scrollTop() > 3700 && $(window).width() <= 900) {
+           $p10.css({"top": "-20px","opacity": "1"});
+           $p11.css({"right": "0px", "opacity": "1"});
+           $p12.css({"top": "-25px", "opacity": "1"});
            
        } 
 });
