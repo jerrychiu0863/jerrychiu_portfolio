@@ -29,17 +29,17 @@ $cardDetails = $('.card__details');
 $(document).ready(function() {
     $(window).scroll(function() {
         if($(this).scrollTop() > 1350 && $(window).width() >= 1200) {
-           $card.css({"width": "100%"});
+           $card.css({"transform": "rotateY(0)", "opacity": "1"});
            $cardPicture.css({"opacity": "1"});
            $cardHeading.css({"opacity": "1"});
            $cardDetails.css({"opacity": "1"});
         }else if($(this).scrollTop() > 1200 && $(window).width() >= 900 && $(window).width() <= 1200) {
-             $card.css({"width": "100%"});
+             $card.css({"transform": "rotateY(0)", "opacity": "1"});
              $cardPicture.css({"opacity": "1"});
              $cardHeading.css({"opacity": "1"});
              $cardDetails.css({"opacity": "1"});
         }else if($(this).scrollTop() > 1200 && $(window).width() <= 900) {
-             $card.css({"opacity": "1", "width": "100%"});
+             $card.css({"transform": "rotateY(0)", "opacity": "1"});
              $cardPicture.css({"opacity": "1"});
              $cardHeading.css({"opacity": "1"});
              $cardDetails.css({"opacity": "1"});

@@ -3,8 +3,10 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
-    width: 0;
-    transition: all linear .5s;
+    opacity: 0;
+    transform: rotateY(90deg);
+    transform-origin: center;
+    transition: transform linear .5s;
 
     &__side {
         border-radius: 3px;
@@ -168,7 +170,9 @@
            only screen and (hover: none) {
         
         height: 50rem;
-        width: 0;
+        opacity: 0;
+        transform: rotateY(90deg);
+        transform-origin: center;
         border-radius: 3px;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
@@ -179,8 +183,10 @@
     @media only screen and (max-width: 56.25em),
            only screen and (hover: none) {
         
-        height: 50rem;
-        width: 0;
+        height: 45rem;
+        opacity: 0;
+        transform: rotateY(90deg);
+        transform-origin: center;
         border-radius: 3px;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);

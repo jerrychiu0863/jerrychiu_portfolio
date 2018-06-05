@@ -301,8 +301,10 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-  width: 0;
-  transition: all linear .5s;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transform-origin: center;
+  transition: transform linear .5s;
   /*&:hover &__side--front {
         transform: rotateY(-180deg);
     }
@@ -417,7 +419,9 @@ body {
   @media only screen and (max-width: 75em), only screen and (hover: none) {
     .card {
       height: 50rem;
-      width: 0;
+      opacity: 0;
+      transform: rotateY(90deg);
+      transform-origin: center;
       border-radius: 3px;
       background-color: #fff;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -425,8 +429,10 @@ body {
       transition: all linear .5s; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
-      height: 50rem;
-      width: 0;
+      height: 45rem;
+      opacity: 0;
+      transform: rotateY(90deg);
+      transform-origin: center;
       border-radius: 3px;
       background-color: #fff;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -1197,7 +1203,7 @@ body {
       padding: 10rem 0 20rem 0; } }
   @media only screen and (max-width: 56.25em) {
     .section-project {
-      padding: 10rem 0 10rem 0;
+      padding: 15rem 0 10rem 0;
       margin-bottom: -20rem; } }
   .section-project-1 {
     background: #f7f7f7;
