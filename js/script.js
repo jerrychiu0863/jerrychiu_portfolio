@@ -20,17 +20,29 @@ $(document).ready(function() {
 
 
 ///////////////Card Animation
-var card;
+var $card, $cardPicture, $cardHeading$, $cardDetails;
 $card = $('.card');
+$cardPicture = $('.card__picture');
+$cardHeading = $('.card__heading-span');
+$cardDetails = $('.card__details');
 
 $(document).ready(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() > 1400 && $(window).width() >= 1200) {
-           $card.css({"opacity": "1"});
+        if($(this).scrollTop() > 1350 && $(window).width() >= 1200) {
+           $card.css({"width": "100%"});
+           $cardPicture.css({"opacity": "1"});
+           $cardHeading.css({"opacity": "1"});
+           $cardDetails.css({"opacity": "1"});
         }else if($(this).scrollTop() > 1200 && $(window).width() >= 900 && $(window).width() <= 1200) {
-             $card.css({"opacity": "1"});
-        }else if($(this).scrollTop() > 1400 && $(window).width() <= 900) {
-             $card.css({"opacity": "1"});
+             $card.css({"width": "100%"});
+             $cardPicture.css({"opacity": "1"});
+             $cardHeading.css({"opacity": "1"});
+             $cardDetails.css({"opacity": "1"});
+        }else if($(this).scrollTop() > 1200 && $(window).width() <= 900) {
+             $card.css({"opacity": "1", "width": "100%"});
+             $cardPicture.css({"opacity": "1"});
+             $cardHeading.css({"opacity": "1"});
+             $cardDetails.css({"opacity": "1"});
         }
     })
 });

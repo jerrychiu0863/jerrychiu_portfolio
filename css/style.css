@@ -301,8 +301,8 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-  opacity: 0;
-  transition: all linear .8s;
+  width: 0;
+  transition: all linear .5s;
   /*&:hover &__side--front {
         transform: rotateY(-180deg);
     }
@@ -338,7 +338,10 @@ body {
             }
         }*/ }
     .card__side--front {
-      background-color: #fff; }
+      background-color: #fff;
+      width: 100%;
+      opacity: 1;
+      transition: all linear .5s; }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -346,7 +349,10 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-right-radius: 3px;
+    opacity: 0;
+    transition: opacity linear .3s;
+    transition-delay: .8s; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/adobe_300x200.jpg); }
     .card__picture--2 {
@@ -366,7 +372,10 @@ body {
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
+    box-decoration-break: clone;
+    opacity: 0;
+    transition: all linear .3s;
+    transition-delay: 1.1s; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
@@ -374,7 +383,10 @@ body {
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
-    padding: .5rem 3rem 3rem 3rem; }
+    padding: .5rem 3rem 3rem 3rem;
+    opacity: 0;
+    transition: all linear .3s;
+    transition-delay: 1.4s; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -402,12 +414,24 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media only screen and (max-width: 75em), only screen and (hover: none) {
     .card {
-      height: auto;
+      height: 50rem;
+      width: 0;
       border-radius: 3px;
       background-color: #fff;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      backface-visibility: hidden;
+      transition: all linear .5s; } }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .card {
+      height: 50rem;
+      width: 0;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      backface-visibility: hidden;
+      transition: all linear .5s; }
       .card__side {
         height: auto;
         position: relative;
@@ -572,7 +596,7 @@ body {
           left: 0;
           transform: scale(1.1); } }
     .composition__photo:hover {
-      outline: 0.5rem solid #55c57a;
+      outline: 0.5rem solid rgba(85, 197, 122, 0.8);
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -948,7 +972,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero_image.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -1149,9 +1173,14 @@ body {
   clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
   margin-top: -16rem; }
+  @media only screen and (max-width: 75em) {
+    .section-skill {
+      height: 95rem;
+      padding: 15rem 0 15rem 0; } }
   @media only screen and (max-width: 56.25em) {
     .section-skill {
-      padding: 20rem 0 10rem 0; } }
+      height: auto;
+      padding: 15rem 0 10rem 0; } }
   .section-skill h2 {
     color: #fff; }
     .section-skill h2::after {

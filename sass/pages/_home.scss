@@ -59,8 +59,14 @@
     padding: 15rem 0 10rem 0;
     margin-top: -16rem;
     
+    @include respond(tab-land) {
+        height: 95rem;
+        padding: 15rem 0 15rem 0;
+    }
+    
     @include respond(tab-port) {
-        padding: 20rem 0 10rem 0;
+        height: auto;
+        padding: 15rem 0 10rem 0;
     }
     
     & h2 {
