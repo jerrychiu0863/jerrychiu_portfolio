@@ -601,6 +601,15 @@ body {
           top: 1rem;
           left: 0;
           transform: scale(1.1); } }
+    .composition__photo--p13 {
+      left: 10rem;
+      top: 4rem;
+      opacity: 0;
+      transition: all .5s linear; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p13 {
+          top: 0;
+          transform: scale(1.2); } }
     .composition__photo:hover {
       outline: 0.5rem solid rgba(85, 197, 122, 0.8);
       transform: scale(1.05) translateY(-0.5rem);
@@ -1093,7 +1102,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-    background-size: 220%;
+    background-size: 230%;
     transition: all .4s; }
     .navigation__link:link span, .navigation__link:visited span {
       margin-right: 1rem;
@@ -1241,6 +1250,18 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section-project-3 {
         margin-bottom: -10rem;
+        padding: 10rem 0 10rem 0; } }
+  .section-project-4 {
+    background: #f7f7f7;
+    padding: 20rem 0 25rem 0;
+    margin-top: -20vh; }
+    @media only screen and (max-width: 75em) {
+      .section-project-4 {
+        margin-top: -10rem;
+        padding: 20rem 0 20rem 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .section-project-4 {
+        margin-bottom: -10rem;
         padding: 10rem 0 20rem 0; } }
 
 .section-stories {
@@ -1258,13 +1279,15 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/san_francisco.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/san_francisco.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .book {

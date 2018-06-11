@@ -140,6 +140,22 @@
         
        @include respond(tab-port) {
            margin-bottom: -10rem;
+           padding: 10rem 0 10rem 0;
+       }
+    }
+    
+    &-4 {
+       background: $color-grey-light-1;
+       padding: 20rem 0 25rem 0; 
+       margin-top: -20vh;
+        
+       @include respond(tab-land) {
+            margin-top: -10rem;
+            padding: 20rem 0 20rem 0;
+       }
+        
+       @include respond(tab-port) {
+           margin-bottom: -10rem;
            padding: 10rem 0 20rem 0;
        }
     }
@@ -168,8 +184,10 @@
         105deg, 
         rgba($color-white, 0.9) 0%, 
         rgba($color-white, 0.9) 50%,
-        transparent 50%), url(../img/nat-10.jpg);
+        transparent 50%), url(../img/san_francisco.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
         
@@ -178,7 +196,7 @@
         105deg, 
         rgba($color-white, 0.9) 0%, 
         rgba($color-white, 0.9) 65%,
-        transparent 65%), url(../img/nat-10.jpg);
+        transparent 65%), url(../img/san_francisco.jpg);
         background-size: cover;
     }
     

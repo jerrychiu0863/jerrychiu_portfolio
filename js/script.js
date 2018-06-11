@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 
 ////////Artist's Web Animation
-var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9, $p10, $p11, $p12;
+var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9, $p10, $p11, $p12, $p13;
 $p1 = $(".composition__photo--p1");
 $p2 = $(".composition__photo--p2");
 $p3 = $(".composition__photo--p3");
@@ -65,6 +65,7 @@ $p9 = $(".composition__photo--p9");
 $p10 = $(".composition__photo--p10");
 $p11 = $(".composition__photo--p11");
 $p12 = $(".composition__photo--p12");
+$p13 = $(".composition__photo--p13");
 
 
 $(document).ready(function() {
@@ -137,6 +138,17 @@ $(window).scroll(function() {
            $p11.css({"right": "0px", "opacity": "1"});
            $p12.css({"top": "-25px", "opacity": "1"});
            
+       } 
+});
+
+////Web app's animation
+$(window).scroll(function() {
+       if($(this).scrollTop() > 4100 && $(window).width() >= 1200){
+           $p13.css({"top": "40px","left": "120px","opacity": "1"});
+       }else if($(this).scrollTop() > 3400 && $(window).width() >= 900 && $(window).width() <= 1200) {
+           $p13.css({"top": "20px","opacity": "1"});
+       } else if($(this).scrollTop() > 3900 && $(window).width() <= 900) {
+           $p13.css({"top": "-20px","opacity": "1"});
        } 
 });
 
