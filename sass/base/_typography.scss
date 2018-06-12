@@ -16,7 +16,7 @@ body {
     &--main {
         display: block;
         font-size: 6rem;
-        font-weight: 400;
+        font-weight: 900;
         letter-spacing: 1.5rem;
         animation-name: moveInLeft;
         animation-duration: 1.5s;
@@ -28,7 +28,7 @@ body {
         }
         
         @include respond(phone) {
-            letter-spacing: 1rem;
+            letter-spacing: .5rem;
             font-size: 5rem;
         }
     }
@@ -41,7 +41,7 @@ body {
         animation: moveInRight 1.5s ease-in-out;
         
         @include respond(tab-land) {
-            letter-spacing: 1rem;
+            letter-spacing: .3rem;
             display: inline-block;
             
         }
@@ -54,7 +54,14 @@ body {
         
         @include respond(phone) {
             letter-spacing: .5rem;
+            width: 130%;
+            margin-left: -5rem;
+            display: block;
         }
+    }
+    
+    &--icon {
+        margin-right: 1rem;
     }
 }
 

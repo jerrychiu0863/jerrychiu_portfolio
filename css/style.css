@@ -90,7 +90,7 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 900;
     letter-spacing: 1.5rem;
     animation-name: moveInLeft;
     animation-duration: 1.5s;
@@ -101,7 +101,7 @@ body {
         font-size: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: 1rem;
+        letter-spacing: .5rem;
         font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
@@ -111,7 +111,7 @@ body {
     animation: moveInRight 1.5s ease-in-out; }
     @media only screen and (max-width: 75em) {
       .heading-primary--sub {
-        letter-spacing: 1rem;
+        letter-spacing: .3rem;
         display: inline-block; } }
     @media only screen and (max-width: 56.25em) {
       .heading-primary--sub {
@@ -119,7 +119,12 @@ body {
         display: inline-block; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .5rem;
+        width: 130%;
+        margin-left: -5rem;
+        display: block; } }
+  .heading-primary--icon {
+    margin-right: 1rem; }
 
 .heading-secondary {
   font-size: 5rem;
