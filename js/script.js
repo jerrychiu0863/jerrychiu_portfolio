@@ -145,9 +145,9 @@ $(window).scroll(function() {
 $(window).scroll(function() {
        if($(this).scrollTop() > 4100 && $(window).width() >= 1200){
            $p13.css({"top": "40px","left": "120px","opacity": "1"});
-       }else if($(this).scrollTop() > 3400 && $(window).width() >= 900 && $(window).width() <= 1200) {
-           $p13.css({"top": "20px","opacity": "1"});
-       } else if($(this).scrollTop() > 3900 && $(window).width() <= 900) {
+       }else if($(this).scrollTop() > 3600 && $(window).width() >= 900 && $(window).width() <= 1200) {
+           $p13.css({"top": "40px","left": "120px","opacity": "1"});
+       } else if($(this).scrollTop() > 4500 && $(window).width() <= 900) {
            $p13.css({"top": "-20px","opacity": "1"});
        } 
 });
