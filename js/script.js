@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 
 ////////Artist's Web Animation
-var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9, $p10, $p11, $p12, $p13;
+var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9, $p10, $p11, $p12, $p13, $p14;
 $p1 = $(".composition__photo--p1");
 $p2 = $(".composition__photo--p2");
 $p3 = $(".composition__photo--p3");
@@ -66,6 +66,7 @@ $p10 = $(".composition__photo--p10");
 $p11 = $(".composition__photo--p11");
 $p12 = $(".composition__photo--p12");
 $p13 = $(".composition__photo--p13");
+$p14 = $(".composition__photo--p14");
 
 
 $(document).ready(function() {
@@ -147,8 +148,19 @@ $(window).scroll(function() {
            $p13.css({"top": "40px","left": "120px","opacity": "1"});
        }else if($(this).scrollTop() > 3600 && $(window).width() >= 900 && $(window).width() <= 1200) {
            $p13.css({"top": "40px","left": "120px","opacity": "1"});
-       } else if($(this).scrollTop() > 4500 && $(window).width() <= 900) {
+       } else if($(this).scrollTop() > 4000 && $(window).width() <= 900) {
            $p13.css({"top": "-20px","opacity": "1"});
+       } 
+});
+
+////Weather app's animation
+$(window).scroll(function() {
+       if($(this).scrollTop() > 4500 && $(window).width() >= 1200){
+           $p14.css({"top": "40px","left": "120px","opacity": "1"});
+       }else if($(this).scrollTop() > 4000 && $(window).width() >= 900 && $(window).width() <= 1200) {
+           $p14.css({"top": "40px","left": "120px","opacity": "1"});
+       } else if($(this).scrollTop() > 4400 && $(window).width() <= 900) {
+           $p14.css({"top": "-20px","opacity": "1"});
        } 
 });
 
