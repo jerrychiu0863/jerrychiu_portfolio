@@ -320,7 +320,7 @@ body {
   .card__side {
     border-radius: 3px;
     font-size: 2rem;
-    height: 52rem;
+    height: 56rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -622,6 +622,17 @@ body {
       transition: left .5s linear; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p14 {
+          top: 0;
+          opacity: 0;
+          transform: scale(1.2);
+          transition: top .5s linear; } }
+    .composition__photo--p15 {
+      left: 10rem;
+      top: 4rem;
+      opacity: 0;
+      transition: left .5s linear; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p15 {
           top: 0;
           opacity: 0;
           transform: scale(1.2);
@@ -1289,6 +1300,18 @@ body {
         padding: 20rem 0 20rem 0; } }
     @media only screen and (max-width: 56.25em) {
       .section-project-5 {
+        margin-bottom: -10rem;
+        padding: 10rem 0 10rem 0; } }
+  .section-project-6 {
+    background: #f7f7f7;
+    padding: 20rem 0 25rem 0;
+    margin-top: -20vh; }
+    @media only screen and (max-width: 75em) {
+      .section-project-6 {
+        margin-top: -10rem;
+        padding: 20rem 0 20rem 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .section-project-6 {
         margin-bottom: -10rem;
         padding: 10rem 0 20rem 0; } }
 

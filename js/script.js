@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 
 ////////Artist's Web Animation
-var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9, $p10, $p11, $p12, $p13, $p14;
+var $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p9, $p10, $p11, $p12, $p13, $p14, $p15;
 $p1 = $(".composition__photo--p1");
 $p2 = $(".composition__photo--p2");
 $p3 = $(".composition__photo--p3");
@@ -67,6 +67,7 @@ $p11 = $(".composition__photo--p11");
 $p12 = $(".composition__photo--p12");
 $p13 = $(".composition__photo--p13");
 $p14 = $(".composition__photo--p14");
+$p15 = $(".composition__photo--p15");
 
 
 $(document).ready(function() {
@@ -161,6 +162,17 @@ $(window).scroll(function() {
            $p14.css({"top": "40px","left": "120px","opacity": "1"});
        } else if($(this).scrollTop() > 4400 && $(window).width() <= 900) {
            $p14.css({"top": "-20px","opacity": "1"});
+       } 
+});
+
+////Reddit's animation
+$(window).scroll(function() {
+       if($(this).scrollTop() > 4900 && $(window).width() >= 1200){
+           $p15.css({"top": "40px","left": "120px","opacity": "1"});
+       }else if($(this).scrollTop() > 4400 && $(window).width() >= 900 && $(window).width() <= 1200) {
+           $p15.css({"top": "40px","left": "120px","opacity": "1"});
+       } else if($(this).scrollTop() > 4800 && $(window).width() <= 900) {
+           $p15.css({"top": "-20px","opacity": "1"});
        } 
 });
 
