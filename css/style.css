@@ -1254,66 +1254,6 @@ body {
         margin-bottom: -10rem;
         padding: 10rem 0 6rem 0;
         height: auto; } }
-  .section-project-2 {
-    background: #f7f7f7;
-    padding: 20rem 0 25rem 0;
-    margin-top: -20vh; }
-    @media only screen and (max-width: 75em) {
-      .section-project-2 {
-        margin-top: -10rem;
-        padding: 20rem 0 20rem 0; } }
-    @media only screen and (max-width: 56.25em) {
-      .section-project-2 {
-        margin-bottom: -10rem;
-        padding: 10rem 0 10rem 0; } }
-  .section-project-3 {
-    background: #f7f7f7;
-    padding: 20rem 0 25rem 0;
-    margin-top: -20vh; }
-    @media only screen and (max-width: 75em) {
-      .section-project-3 {
-        margin-top: -10rem;
-        padding: 20rem 0 20rem 0; } }
-    @media only screen and (max-width: 56.25em) {
-      .section-project-3 {
-        margin-bottom: -10rem;
-        padding: 10rem 0 10rem 0; } }
-  .section-project-4 {
-    background: #f7f7f7;
-    padding: 15rem 0 20rem 0;
-    margin-top: -20vh; }
-    @media only screen and (max-width: 75em) {
-      .section-project-4 {
-        margin-top: -10rem;
-        padding: 20rem 0 20rem 0; } }
-    @media only screen and (max-width: 56.25em) {
-      .section-project-4 {
-        margin-bottom: -10rem;
-        padding: 10rem 0 10rem 0; } }
-  .section-project-5 {
-    background: #f7f7f7;
-    padding: 15rem 0 20rem 0;
-    margin-top: -20vh; }
-    @media only screen and (max-width: 75em) {
-      .section-project-5 {
-        margin-top: -10rem;
-        padding: 20rem 0 20rem 0; } }
-    @media only screen and (max-width: 56.25em) {
-      .section-project-5 {
-        margin-bottom: -10rem;
-        padding: 10rem 0 10rem 0; } }
-  .section-project-6 {
-    background: #f7f7f7;
-    padding: 15rem 0 20rem 0;
-    margin-top: -20vh; }
-    @media only screen and (max-width: 75em) {
-      .section-project-6 {
-        margin-top: -10rem;
-        padding: 20rem 0 20rem 0; } }
-    @media only screen and (max-width: 56.25em) {
-      .section-project-6 {
-        margin-bottom: -10rem;
-        padding: 10rem 0 20rem 0; } }
 
 .section-stories {
   padding: 15rem 0;
