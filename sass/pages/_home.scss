@@ -80,35 +80,38 @@
 
 .section-project {
     background: $color-grey-light-1;
-    padding: 25rem 0 25rem 0;
+    padding: 20rem 0 20rem 0;
     margin-top: -20vh;
     
     @include respond(tab-land) {
         margin-top: -10vh;
         margin-bottom: -15rem;
-        padding: 10rem 0 20rem 0;
+        padding: 10rem 0 15rem 0;
     }
     
     @include respond(tab-port) {
-        padding: 15rem 0 10rem 0;
+        padding: 15rem 0 17rem 0;
         margin-bottom: -20rem;
     }
     
     &-1 {
        background: $color-grey-light-1;
-       padding: 20rem 0 25rem 0; 
+       padding: 10rem 0 20rem 0; 
        margin-top: -20vh;
+
         
        @include respond(tab-land) {
            margin-top: -10rem;
            margin-bottom: -15rem;
-           padding: 20rem 0 20rem 0;
+           padding: 10rem 0 15rem 0;
        }
         
        @include respond(tab-port) {
            margin-bottom: -10rem;
-           padding: 20rem 0 10rem 0;
+           padding: 10rem 0 6rem 0;
+           height: auto;
        }
+     
 
     }
     
@@ -206,8 +209,14 @@
     padding: 15rem 0;
     background-image: linear-gradient( to right bottom, $color-primary-light, $color-primary-dark);
     
+    
+    @include respond(tab-land) {
+        margin-top: 15rem;
+    }
+    
     @include respond(tab-port) {
         padding: 10rem 0;
+        margin-top: 10.1rem;
     }
 }
 

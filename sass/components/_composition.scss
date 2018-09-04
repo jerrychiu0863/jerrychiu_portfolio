@@ -2,26 +2,29 @@
     position: relative;
     
     &__photo{
-        width: 55%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        width: 80%;
+        display: block;
+        box-shadow: 0 2px 4px rgba($color-black, .4);
         border-radius: 2px;
-        position: absolute;
+        //position: absolute;
+        margin: 2rem 0;
         z-index: 10;
         transition: transform .2s linear,
                     outline .2s linear;
         outline-offset: 1rem;
         
         @include respond(tab-port) {
-            float: left;
+            //float: left;
+            margin: 2rem auto;
             position: relative;
             width: 33.3333333%;
-            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);    
+            box-shadow: 0 2px 4px rgba($color-black, .4);
         }
         
         &--p1 {
-            left: 0;
-            top: -5rem;
-            opacity: 0;
+            //width: 40rem;
+            //height: 20rem;
+            opacity: 1;
             transition: top .5s linear;
                         
             
