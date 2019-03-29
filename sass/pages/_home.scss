@@ -1,33 +1,37 @@
 .section-about {
-    background: $color-grey-light-1;
-    padding: 15rem 0 25rem 0;
-    margin-top: -20vh;
-    
-    & .aboutme {
-        opacity: 0;
-        transform: scale(.9);
-        transition: all linear .3s;
-    }
-    
-    & p {
-        letter-spacing: 1px;
-        text-align: justify;
-        text-justify: inter-word;
-    }
-    
-    & .aboutskill {
-        opacity: 0;
-        transform: scale(.9);
-        transition: all linear .3s;
-    }
-    
-    & .skill__list {
-        padding-left: 2.4rem;
-    }
-    
-    @include respond(tab-port) {
-        padding: 20rem 0;
-    }
+  background: $color-grey-light-1;
+  padding: 15rem 0 25rem 0;
+  margin-top: -20vh;
+
+  & .aboutme {
+      opacity: 0;
+      transform: scale(.9);
+      transition: all linear .3s;
+  }
+
+  & p {
+      letter-spacing: 1px;
+      text-align: justify;
+      text-justify: inter-word;
+  }
+
+  & .aboutskill {
+      opacity: 0;
+      transform: scale(.9);
+      transition: all linear .3s;
+  }
+
+  & .skill__list {
+    padding-left: 2.4rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 15rem 5rem 20rem 5rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
 }
 
 /*.section-features {
